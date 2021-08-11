@@ -10,7 +10,6 @@ function newItem(){
        if (inputValue === '') {
          alert("You must write something!");
        } else {
-         let list = document.querySelector('#list');
          $('#list').append(li);
        }
     
@@ -27,7 +26,7 @@ function newItem(){
        crossOutButton.on('click', function deleteListItem () {
          li.addClass('delete');
        })
-       
+
      // 4. Reordering the items: 
        $('#list').sortable();
     
